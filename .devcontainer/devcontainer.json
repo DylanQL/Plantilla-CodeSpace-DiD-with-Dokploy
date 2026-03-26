@@ -11,5 +11,5 @@
       "version": "latest"
     }
   },
-  "postCreateCommand": "sudo apt-get update && sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y"
+  "postCreateCommand": "sudo apt-get update && sudo DEBIAN_FRONTEND=noninteractive apt-get upgrade -y && sudo bash ./dokploy-install.sh"
 }
