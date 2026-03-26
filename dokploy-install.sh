@@ -95,11 +95,6 @@ install_dokploy() {
         exit 1
     fi
 
-    # check if is running inside a container
-    if [ -f /.dockerenv ]; then
-        echo "This script must be run on Linux" >&2
-        exit 1
-    fi
 
     # check if something is running on port 80
     if ss -tulnp | grep ':80 ' >/dev/null; then
