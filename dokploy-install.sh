@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Docker version to install and maintain
+DOCKER_VERSION="28.5.0"
+
 # Detect version from environment variable or detect latest stable from GitHub
 # Usage with curl (export first): export DOKPLOY_VERSION=canary && curl -sSL https://dokploy.com/install.sh | sh
 # Usage with curl (export first): export DOKPLOY_VERSION=latest && curl -sSL https://dokploy.com/install.sh | sh
